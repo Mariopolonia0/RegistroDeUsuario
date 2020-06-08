@@ -26,7 +26,7 @@
         <Label Content="Digite La Contraseña" Grid.Column="3" HorizontalAlignment="Left" Height="38" Margin="69,180,0,0" VerticalAlignment="Top" Width="199" FontSize="20" Grid.ColumnSpan="3"/>
         <TextBox x:Name="ContrasenaTextBox" Grid.Column="5" HorizontalAlignment="Left" Height="34" Margin="84,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"/>
         <Label Content="Id Usuario" Grid.Column="3" HorizontalAlignment="Left" Height="42" Margin="69,82,0,0" VerticalAlignment="Top" Width="157" FontSize="20" Grid.ColumnSpan="3"/>
-        <TextBox x:Name="IdTextBox" Grid.Column="5" HorizontalAlignment="Left" Height="33" Margin="84,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.492,0.519">
+        <TextBox x:Name="IdTextBox" Grid.Column="5" HorizontalAlignment="Left" Height="34" Margin="84,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.492,0.519">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -39,7 +39,7 @@
         <Button Content="Nuevo" Grid.Column="3" HorizontalAlignment="Left" Height="55" Margin="73,262,0,0" VerticalAlignment="Top" Width="113" FontSize="20" Foreground="Red" Grid.ColumnSpan="2"/>
         <Button Content="Guardar" Grid.Column="5" HorizontalAlignment="Left" Height="55" Margin="10,262,0,0" VerticalAlignment="Top" Width="109" FontSize="20" Foreground="Red"/>
         <Button Content="Eliminar" Grid.Column="5" HorizontalAlignment="Left" Height="55" Margin="135,261,0,0" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="Red"/>
-        <Button Content="Buscar" Grid.Column="5" HorizontalAlignment="Left" Height="33" Margin="177,87,0,0" VerticalAlignment="Top" Width="81" Foreground="Red"/>
+        <Button Content="Buscar" Grid.Column="5" HorizontalAlignment="Left" Height="36" Margin="178,83,0,0" VerticalAlignment="Top" Width="80" Foreground="Red"/>
 
 
     </Grid>
