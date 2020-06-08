@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EjercicioCambio"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="378" Width="522">
+    <Grid x:Name="VentanaInicio" Background="#FF747474" HorizontalAlignment="Left" Width="627">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="165*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="416*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Bienvenido a Su Sistema De Prestamo" Grid.Column="1" HorizontalAlignment="Left" Height="63" Margin="5,20,0,0" VerticalAlignment="Top" Width="509" FontSize="30" Foreground="#FF1313F0" Grid.ColumnSpan="5"/>
+        <Label Content="Digite El Usuario" Grid.Column="3" HorizontalAlignment="Left" Height="42" Margin="69,126,0,0" VerticalAlignment="Top" Width="157" FontSize="20" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="UsuarioTextBox" Grid.Column="5" HorizontalAlignment="Left" Height="34" Margin="84,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"/>
+        <Label Content="Digite La Contraseña" Grid.Column="3" HorizontalAlignment="Left" Height="38" Margin="69,180,0,0" VerticalAlignment="Top" Width="199" FontSize="20" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="ContrasenaTextBox" Grid.Column="5" HorizontalAlignment="Left" Height="34" Margin="84,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"/>
+        <Label Content="Id Usuario" Grid.Column="3" HorizontalAlignment="Left" Height="42" Margin="69,82,0,0" VerticalAlignment="Top" Width="157" FontSize="20" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="IdTextBox" Grid.Column="5" HorizontalAlignment="Left" Height="33" Margin="84,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.492,0.519">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.651"/>
+                    <RotateTransform Angle="-0.391"/>
+                    <TranslateTransform Y="0.981"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Nuevo" Grid.Column="3" HorizontalAlignment="Left" Height="55" Margin="73,262,0,0" VerticalAlignment="Top" Width="113" FontSize="20" Foreground="Red" Grid.ColumnSpan="2"/>
+        <Button Content="Guardar" Grid.Column="5" HorizontalAlignment="Left" Height="55" Margin="10,262,0,0" VerticalAlignment="Top" Width="109" FontSize="20" Foreground="Red"/>
+        <Button Content="Eliminar" Grid.Column="5" HorizontalAlignment="Left" Height="55" Margin="135,261,0,0" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="Red"/>
+        <Button Content="Buscar" Grid.Column="5" HorizontalAlignment="Left" Height="33" Margin="177,87,0,0" VerticalAlignment="Top" Width="81" Foreground="Red"/>
+
 
     </Grid>
 </Window>
