@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RegistroDeUsuario.BLL;
+using RegistroDeUsuario.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,10 +26,34 @@ namespace EjercicioCambio
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        Usuario usuario = new Usuario();
+        private void GuardarBoton_Click(object sender, RoutedEventArgs e)
         {
+            if (UsuarioTextBox.Text.Length == 0 |  IdTextBox.Text.Length == 0 | ContrasenaTextBox.Text.Length == 0 )
+            {
+                MessageBox.Show("Campo Imcompleto", "Mensaje De Error", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
 
+            usuario.IdUsuario = Convert.ToInt32(IdTextBox.Text);
+            usuario.nombreUsuario = UsuarioTextBox.Text;
+            usuario.contrasena = ContrasenaTextBox.Text;
+            RegistroBLL.GuardarUsuario(usuario);
+        }
+
+        private void NuevoBoton_Click(object sender, RoutedEventArgs e)
+        {
+            IdTextBox.Text = "";
+            UsuarioTextBox.Text = "";
+            ContrasenaTextBox.Text = "";
+        }
+
+        private void BuscarBoton_Click(object sender, RoutedEventArgs e)
+        {
+            int id = Convert.ToInt32(IdTextBox.Text);
+            usuario = RegistroBLL.Buscar(id);
+            UsuarioTextBox.Text = usuario.nombreUsuario;
+            ContrasenaTextBox.Text = usuario.contrasena;
         }
     }
 }
