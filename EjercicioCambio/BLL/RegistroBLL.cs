@@ -35,7 +35,6 @@ namespace RegistroDeUsuario.BLL
         {
             Contexto contexto = new Contexto();
 
-
             try
             {
                 contexto.Usuarios.Add(usuario);
@@ -50,6 +49,32 @@ namespace RegistroDeUsuario.BLL
             {
                 contexto.Dispose();
             }
+        }
+
+        public static bool Eliminar (int id)
+        {
+            bool paso = false;
+            Contexto contexto = new Contexto();
+            try
+            {
+                Usuario usuario = contexto.Usuarios.Find(id);
+                if(usuario != null)
+                {
+                    contexto.Usuarios.Remove(usuario);
+                    paso = contexto.SaveChanges() > 0;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return paso;
+
         }
     }
 }

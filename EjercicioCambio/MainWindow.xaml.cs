@@ -35,9 +35,9 @@ namespace EjercicioCambio
                 return;
             }
 
-            usuario.IdUsuario = Convert.ToInt32(IdTextBox.Text);
-            usuario.nombreUsuario = UsuarioTextBox.Text;
-            usuario.contrasena = ContrasenaTextBox.Text;
+           // usuario.IdUsuario = Convert.ToInt32(IdTextBox.Text);
+            //usuario.nombreUsuario = UsuarioTextBox.Text;
+           // usuario.contrasena = ContrasenaTextBox.Text;
             RegistroBLL.GuardarUsuario(usuario);
         }
 
@@ -54,6 +54,11 @@ namespace EjercicioCambio
             usuario = RegistroBLL.Buscar(id);
             UsuarioTextBox.Text = usuario.nombreUsuario;
             ContrasenaTextBox.Text = usuario.contrasena;
+        }
+
+        private void EliminarBoton_Click(object sender, RoutedEventArgs e)
+        {
+            ContrasenaTextBox.Text = usuario.nombreUsuario;
         }
     }
 }

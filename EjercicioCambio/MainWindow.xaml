@@ -13,16 +13,18 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="165*"/>
             <ColumnDefinition Width="25*"/>
-            <ColumnDefinition Width="416*"/>
+            <ColumnDefinition Width="335*"/>
+            <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="7*"/>
             <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="14*"/>
-            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="86*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="Titulo" Content="Bienvenido a Su Sistema De Prestamo" Grid.Column="1" HorizontalAlignment="Left" Height="63" Margin="5,20,0,0" VerticalAlignment="Top" Width="509" FontSize="30" Foreground="#FF1313F0" Grid.ColumnSpan="5"/>
+        <Label x:Name="Titulo" Content="Bienvenido a Su Sistema" Grid.Column="1" HorizontalAlignment="Left" Height="63" Margin="5,20,0,0" VerticalAlignment="Top" Width="509" FontSize="30" Foreground="#FF1313F0" Grid.ColumnSpan="5"/>
         <Label x:Name="UsuarioLabel" Content="Digite El Usuario" Grid.Column="3" HorizontalAlignment="Left" Height="42" Margin="69,126,0,0" VerticalAlignment="Top" Width="157" FontSize="20" Grid.ColumnSpan="3"/>
-        <TextBox x:Name="UsuarioTextBox" Grid.Column="5" HorizontalAlignment="Left" Height="34" Margin="84,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"/>
+
+        <TextBox x:Name="UsuarioTextBox" Text="{Binding nombreUsuario}" Grid.Column="5" HorizontalAlignment="Left" Height="34" Margin="84,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"  />
+        
         <Label x:Name="ContraseñaLabel" Content="Digite La Contraseña" Grid.Column="3" HorizontalAlignment="Left" Height="38" Margin="69,180,0,0" VerticalAlignment="Top" Width="199" FontSize="20" Grid.ColumnSpan="3"/>
         <TextBox x:Name="ContrasenaTextBox" Grid.Column="5" HorizontalAlignment="Left" Height="34" Margin="84,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"/>
         <Label x:Name="IdUsusarioLabel" Content="Id Usuario" Grid.Column="3" HorizontalAlignment="Left" Height="42" Margin="69,82,0,0" VerticalAlignment="Top" Width="157" FontSize="20" Grid.ColumnSpan="3"/>
@@ -38,7 +40,7 @@
         </TextBox>
         <Button x:Name="NuevoBoton" Content="Nuevo" Grid.Column="3" HorizontalAlignment="Left" Height="55" Margin="73,262,0,0" VerticalAlignment="Top" Width="113" FontSize="20" Foreground="Red" Grid.ColumnSpan="2" Click="NuevoBoton_Click"/>
         <Button x:Name="GuardarBoton" Content="Guardar" Grid.Column="5" HorizontalAlignment="Left" Height="55" Margin="10,262,0,0" VerticalAlignment="Top" Width="109" FontSize="20" Foreground="Red" Click="GuardarBoton_Click"/>
-        <Button x:Name="EliminarBoton" Content="Eliminar" Grid.Column="5" HorizontalAlignment="Left" Height="55" Margin="135,261,0,0" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="Red"/>
+        <Button x:Name="EliminarBoton" Content="Eliminar" Grid.Column="5" HorizontalAlignment="Left" Height="55" Margin="135,261,0,0" VerticalAlignment="Top" Width="123" FontSize="20" Foreground="Red" Click="EliminarBoton_Click"/>
         <Button x:Name="BuscarBoton" Content="Buscar" Grid.Column="5" HorizontalAlignment="Left" Height="36" Margin="178,83,0,0" VerticalAlignment="Top" Width="80" Foreground="Red" Click="BuscarBoton_Click"/>
 
 
